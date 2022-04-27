@@ -8,6 +8,7 @@ export default function Dogs({dogs}){
     return (
         <Layout>
             <h2>Random Images of Dogs !</h2>
+            <h2>Click on the images below . Also, cats are stupid </h2>
             <h3>Total Dogs : {dogs.length}</h3>
             {dogs.map(item=>{
                 
