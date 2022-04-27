@@ -12,7 +12,7 @@ export default function Users({ user }) {
       
     <Layout title={"All Users"}>
       <h2>Number of Users :{user.length}</h2>
-      <h2>! Don't click on the users below !</h2>
+      <h2>! click on the users below !</h2>
     <div className="table-responsive">
       <table className="table table-hover">
         <thead>
