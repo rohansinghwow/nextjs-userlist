@@ -1,11 +1,15 @@
 import axios from "axios";
+import {useState,useEffect} from 'react'
 import Layout from "../../components/Layout";
 import { useRouter } from "next/router";
 
+
 export default function Users({ user }) {
   const router = useRouter();
+  
 
   return (
+      
     <Layout title={"All Users"}>
       <h2>Number of Users :{user.length}</h2>
 
@@ -52,6 +56,7 @@ export default function Users({ user }) {
         </tbody>
       </table>
     </Layout>
+   
   );
 }
 export async function getStaticProps(context) {
