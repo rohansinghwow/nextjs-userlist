@@ -21,13 +21,13 @@ export default function SingleDog({singledog}){
 
 export async function getServerSideProps(context){
     try {
-        const {data} = await axios.get(`http://localhost:3000/api/dogs/${context.query.id}`)
+        const {data} = await axios.get(`https://user-list-next.netlify.app/api/dogs/${context.query.id}`)
         return {
             props : {
                 singledog : data
             }
         }    
     } catch (error) {
-        
+        console.log(error)
     }
 }

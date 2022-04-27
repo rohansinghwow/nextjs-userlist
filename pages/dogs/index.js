@@ -36,17 +36,18 @@ onClick={()=>router.push(`/dogs/${item.id}`)}
     )
 }
 
-export async function getServerSideProps(){
+export async function getStaticProps(context){
         
     try {
-        const {data} = await axios.get('http://localhost:3000/api/dogs/')
+        const {data} = await axios.get(`https://user-list-next.netlify.app/api/dogs/`)
+        
         return {
             props: {
                 dogs : data
             }
         }
     } catch (error) {
-        
+        console.log(error)
     }
 }
  
