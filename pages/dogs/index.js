@@ -15,6 +15,7 @@ export default function Dogs({dogs}){
                   return (
 
 <Image className='img-container p-2'
+key={item.id}
 role={'button'}
 onClick={()=>router.push(`/dogs/${item.id}`)}
                     layout='fixed'
