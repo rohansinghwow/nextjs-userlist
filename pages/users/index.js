@@ -12,7 +12,7 @@ export default function Users({ user }) {
       
     <Layout title={"All Users"}>
       <h2>Number of Users :{user.length}</h2>
-
+    <div className="table-responsive">
       <table className="table table-hover">
         <thead>
           <tr>
@@ -55,6 +55,7 @@ export default function Users({ user }) {
           ))}
         </tbody>
       </table>
+      </div>
     </Layout>
    
   );
