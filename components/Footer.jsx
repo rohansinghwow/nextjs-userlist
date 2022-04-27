@@ -1,8 +1,8 @@
 export default function Footer(){
 
     return (
-        <>
-            <h2>This is footer of the website</h2>
-        </>
+        <footer className="p-5 bg-dark text-light">
+            <h2>Simple Bootstrap components were used for styling.</h2>
+        </footer>
     )
 }
